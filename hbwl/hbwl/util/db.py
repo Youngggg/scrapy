@@ -68,7 +68,6 @@ class DB(object):
         number_rows = self.__session.rowcount
         number_columns = self.__session.description
 
-	logging.debug("SQL=" + cmd)
 
         if number_rows >= 1 and number_columns > 1:
             result = [item for item in self.__session.fetchall()]
@@ -84,7 +83,6 @@ class DB(object):
         self.__session.execute(cmd)
         self.__connection.commit()
 
-	logging.debug("SQL=" + cmd)
 
         update_rows = self.__session.rowcount
         self.__close()
@@ -96,7 +94,6 @@ class DB(object):
         self.__session.execute(cmd)
         self.__connection.commit()
 
-	logging.debug("SQL=" + cmd)
 
         lastrowid = self.__session.lastrowid
         self.__close()
@@ -108,7 +105,6 @@ class DB(object):
         self.__session.execute(cmd)
         self.__connection.commit()
 
-	logging.debug("SQL=" + cmd)
 
         delete_rows = self.__session.rowcount
         self.__close()
