@@ -1,0 +1,13 @@
+setup.py
+baidu_slave1/__init__.py
+baidu_slave1/items.py
+baidu_slave1/middlewares.py
+baidu_slave1/pipelines.py
+baidu_slave1/settings.py
+baidu_slave1/spiders/__init__.py
+baidu_slave1/spiders/todayhotInfoSpider.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
